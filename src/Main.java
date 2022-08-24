@@ -35,12 +35,12 @@ public class Main {
         cupcakeMenu.add(cupcake);
         cupcakeMenu.add(redVelvet);
         cupcakeMenu.add(chocolate);
-
-        for( Cupcake cc : cupcakeMenu){
-            System.out.println("\n"+ cc.getClass().getSimpleName() + " Price : " + cc.getPrice() + " \nDescription: "  );
-            cc.type();
-
-        }
+//
+//        for( Cupcake cc : cupcakeMenu){
+//            System.out.println("\n"+ cc.getClass().getSimpleName() + " Price : " + cc.getPrice() + " \nDescription: "  );
+//            cc.type();
+//
+//        }
         // Checking Soda MAchine part
 
         ArrayList<Drink> drinkMenu = new ArrayList<>();
@@ -75,11 +75,14 @@ public class Main {
         drinkMenu.add(soda);
         drinkMenu.add(milk);
 
-        for( Drink drink : drinkMenu){
-            System.out.println("\n" +drink.getClass().getSimpleName() + " Price : " + drink.getPrice() + " \nDescription: "  );
-            drink.type();
+//        for( Drink drink : drinkMenu){
+//            System.out.println("\n" +drink.getClass().getSimpleName() + " Price : " + drink.getPrice() + " \nDescription: "  );
+//            drink.type();
+//
+//        }
 
-        }
+        new Order(cupcakeMenu,drinkMenu);
+
 
     }
 
